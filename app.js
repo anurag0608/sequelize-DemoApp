@@ -13,9 +13,9 @@ shouldCompress = (req, res) => {
     // fallback to standard compression
     return compression.filter(req, res);
   };
-
-  //import models
-  const { User } = require('./sequelize');
+  
+//import models
+const { User } = require('./sequelize');
 
 app.set('trust proxy', 1);
 app.set('view engine','ejs');
