@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/uikit.min.css" />
+        <link rel='stylesheet' href="/css/main.css">
+        <script src="/js/uikit.min.js"></script>
+        <script src="/js/uikit-icons.min.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="/js/main.js"></script>
+    </head>
+    <body>
+        <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+            <div class="uk-navbar-left">
+        
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Sequelize</a></li>
+                    <li>
+                        <a href="#">Dev</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="https://github.com/anurag0608">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+        
+            </div>
+        </nav>
+        <div class="uk-container">
+            <div class="ICON uk-flex uk-flex-center">
+                <div></div>
+                <div>
+                    <img src="/images/sequelize.svg" uk-img>
+                </div>
+                <div></div>
+            </div>
+            <div class="DBAccess uk-flex uk-flex-center">
+                <div></div>
+                <div>
+                    <div style="margin-bottom: 50px;"class="uk-card uk-card-default">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <ul class="uk-subnav uk-subnav-pill panel" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+                                        <li><a href="#">CREATE</a></li>
+                                        <li><a href="#">READ</a></li>
+                                        <li><a href="#">UPDATE</a></li>
+                                        <li><a href="#">DELETE</a></li>
+                                    </ul>    
+                                    <ul class="uk-switcher uk-margin">
+                                        <div id='create'>
+                                            <form>
+                                                <input class="uk-input uk-width-1-2" id='newf' type="text" name="firstname" placeholder="First Name" required>
+                                                <input class="uk-input uk-width-1-2" id='newl'type="text" name="lastname" placeholder="Last Name" required>
+                                                <button style="display: block;margin: 10px;" id='b1'class="uk-button uk-button-primary">Create</button>
+                                            </form>
+                                                
+                                        </div>
+                                        <div id='read'>
+                                            <form>
+                                                <button style="display: block;margin: 10px;" id='b2'class="uk-button uk-button-primary">Find All</button>
+                                            </form>
+                                            
+                                        </div>
+                                        <div id='update'>
+                                            <form>
+                                                <input class="uk-input uk-width-1-2" id='findf' type="text" name="firstname" placeholder="Find by first name...">
+                                                <input class="uk-input uk-width-1-2" id='replacel'type="text" name="lastname" placeholder="And update its last name...">
+                                                <button type="submit" style="display: block;margin: 10px;" id='b3'class="uk-button uk-button-primary">update</button>
+                                            </form>
+                                                
+                                        </div>
+                                        <div id='delete'>
+                                            <form>
+                                                <input class="uk-input uk-width-1-1" id='findbyf'type="text" placeholder="Find by First Name and delete...">
+                                                <button type="submit" style="display: block;margin: 10px;" id='b4'class="uk-button uk-button-primary">Delete</button>
+                                            </form>
+                                                
+                                        </div>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-footer">
+                            <div id='results'>
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
