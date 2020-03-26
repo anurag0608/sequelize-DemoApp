@@ -22,6 +22,7 @@ const sequelize = new Sequelize(process.env.DB_NAME,process.env.DB_USERNAME,proc
   const User = UserModel(sequelize, Sequelize);
 
   //sync with database
+//drop all tables if exists
   sequelize.sync({force: true})
   .then(()=>{
       console.log(chalk.green('Database and tables created!'));
