@@ -14,7 +14,7 @@
 
 ### How to install?
 
-> git clone <br />
+> git clone https://github.com/anurag0608/sequelize-DemoApp.git <br />
 > cd sequelize-DemoApp/ <br />
 > npm install <br />
 ##### Run with 
